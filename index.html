@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript DOM - NIOMIC</title>
+  </head>
+  <body>
+    <h1>Tugas 44</h1>
+
+    <p>Jangan Rubah Yang Ini</p>
+
+    <p>Ubah Warna Yang Ini</p>
+
+    <button type="button" onclick="myFunction()" id="btn1">Ubah Warna</button>
+
+    <script type="text/javascript">
+      function myFunction() {
+        var a = document.getElementsByTagName("p");
+
+        var b = a.item(1);
+
+        b.style.color = "blue";
+      }
+    </script>
+  </body>
+</html>
